@@ -5,16 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>헬로, 월드~!</title>
+    <!--
+        선택자 selector {
+             property : value ; 
+        }
+    -->
+    <style>
+        /* 우선순위 : 포괄 < 구체 (큰태그는 작은 태그에 진다) */
+        /* 우선순위 : class < id << !important */
+        /* 우선순위 : 같은 급일 때(class), 위 < 아래 코드의 우선순위가 더 높다. */
+        * {
+            color : gray; 
+        }
+        li {
+            color: teal;
+        }
+        #one{
+            color: orange;
+        }
+        .cute {
+            color: crimson !important;  /*id보다 더 세다 가장 큰 순위: important */
+        }
+        .two {
+            color: darkmagenta;
+        }
+    </style>
 </head>
 <body>
     <ul>
         <li class="cute" class="cute" id="one">고양이 한 마리</li>
-        <li class="cute two">고양이 두 마리</li>
-        <li class="cute" style="color: blueviolet;">고양이 세 마리</li>
+        <li class="cute two">고양이 두 마리</li>  <!--시험 문제 내기 좋음 cute two 띄어쓰기 -->
+        <li class="cute" style="color: darkblue;">고양이 세 마리</li>
         <li class="cute">고양이 네 마리</li>
-        <li class="cute">고양이 다섯 마리</li>
+        <li class="beautiful">고양이 다섯 마리</li>
         <li class="cute">고양이 여섯 마리</li>
     </ul>
+    <hr/>
     <center>
     <img src="http://image.dongascience.com/Photo/2020/10/8a5748b94df480da7df06adcdaa417c9.jpg" alt="귀여운 고양잉">
     </center>
