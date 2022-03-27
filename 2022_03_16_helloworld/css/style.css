@@ -33,8 +33,9 @@
         /* h2의 자매 중에 h3를 모두 찾는 것 : 마주하는 모든 자매 */
         background-color : aqua;
     }
-    li:nth-child(2){
+    ul:nth-child(4) > li:nth-child(4){
         /* n번째 자식  */
+        /* 과제 우기에게만 밑줄이 나오도록 하는것  */
         text-decoration: underline;
     }
     [type="password"] { 
