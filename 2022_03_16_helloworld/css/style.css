@@ -44,9 +44,10 @@ body > ul > ul:nth-child(4) > li:nth-child(4) {
   text-decoration: underline;
 }
 
-body > ul > li:nth-child(3),
+/*body > ul > li:nth-child(3),*/
 body > ul > ul:nth-child(4) {
   background-color: pink;
+  border: thick dashed plum;
 }
 /* => 사이트에서 그 부분 클릭 후 검사 copy - selector (단점 : html 코드가 변경되면 사용할 수 없다) */
 
