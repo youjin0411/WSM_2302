@@ -3,49 +3,55 @@
      property : value ; 
 }
 */
-        /* 우선순위 : 포괄 < 구체 (큰태그는 작은 태그에 진다) */
-        /* 우선순위 : class < id << !important */
-        /* 우선순위 : 같은 급일 때(class), 위 < 아래 코드의 우선순위가 더 높다. */
-    * {
-        color : gray; 
-    }
-    body > ul > li {
-        color: green;
-    }
-    body li, h6 {
-        /*  >: 자식(직계 자식만 선택가능하다), 띄어쓰기: 자손(내 밑에 누구든지 선택가능하다)  */
-        color: teal;
-    }
-    #one{
-        color: orange;
-    }
-    .cute {
-        color: crimson !important;  /*id보다 더 세다 가장 큰 순위: important */
-    }
-    .two {
-        color: darkmagenta;
-    }
-    h1 + h2 {
-        /* h1의 자매 중에 h2를 하나만 찾는 것 : 마주하는 첫째 자매  */
-        background-color: skyblue;
-    }
-    h2 ~ h3 {
-        /* h2의 자매 중에 h3를 모두 찾는 것 : 마주하는 모든 자매 */
-        background-color : aqua;
-    }
-    body > ul > ul:nth-child(4) > li:nth-child(4){  /*li:unt-child는 붙여써야 한다*/
-        /* nth-child(n) 번째 자식  */
-        /* 과제 우기에게만 밑줄이 나오도록 하는것  */
-        /* first-child: 첫째 */
-        /* last-child : 막내 */
-        text-decoration: underline;
-    }
+/* 우선순위 : 포괄 < 구체 (큰태그는 작은 태그에 진다) */
+/* 우선순위 : class < id << !important */
+/* 우선순위 : 같은 급일 때(class), 위 < 아래 코드의 우선순위가 더 높다. */
 
-    body > ul > li:nth-child(3)
-    /* => 사이트에서 그 부분 클릭 후 검사 copy - selector (단점 : html 코드가 변경되면 사용할 수 없다) */
+* {
+  color: gray;
+}
+body > ul > li {
+  color: green;
+}
+body li,
+h6 {
+  /*  >: 자식(직계 자식만 선택가능하다), 띄어쓰기: 자손(내 밑에 누구든지 선택가능하다)  */
+  color: teal;
+}
+#one {
+  color: orange;
+}
+.cute {
+  color: crimson !important; /*id보다 더 세다 가장 큰 순위: important */
+}
+.two {
+  color: darkmagenta;
+}
+h1 + h2 {
+  /* h1의 자매 중에 h2를 하나만 찾는 것 : 마주하는 첫째 자매  */
+  background-color: skyblue;
+}
+h2 ~ h3 {
+  /* h2의 자매 중에 h3를 모두 찾는 것 : 마주하는 모든 자매 */
+  background-color: aqua;
+}
+body > ul > ul:nth-child(4) > li:nth-child(4) {
+  /*li:unt-child는 붙여써야 한다*/
+  /* nth-child(n) 번째 자식  */
+  /* 과제 우기에게만 밑줄이 나오도록 하는것  */
+  /* first-child: 첫째 */
+  /* last-child : 막내 */
+  text-decoration: underline;
+}
 
-    [type="password"] { 
-        /* 타입은 [ ] */
-        /* HTML 태그 속성 = "값" */
-        background-color: chocolate;
-    }
+body > ul > li:nth-child(3),
+body > ul > ul:nth-child(4) {
+  background-color: pink;
+}
+/* => 사이트에서 그 부분 클릭 후 검사 copy - selector (단점 : html 코드가 변경되면 사용할 수 없다) */
+
+[type="password"] {
+  /* 타입은 [ ] */
+  /* HTML 태그 속성 = "값" */
+  background-color: chocolate;
+}
