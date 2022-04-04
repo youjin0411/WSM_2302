@@ -10,6 +10,9 @@
 * {
   color: gray;
 }
+#tittle{
+  font-size: 40px;
+}
 body > ul > li {
   color: green;
 }
