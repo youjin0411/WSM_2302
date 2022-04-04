@@ -35,11 +35,11 @@ h6 {
 }
 h1 + h2 {
   /* h1의 자매 중에 h2를 하나만 찾는 것 : 마주하는 첫째 자매  */
-  background-color: skyblue;
+  background-color: coral;
 }
 h2 ~ h3 {
   /* h2의 자매 중에 h3를 모두 찾는 것 : 마주하는 모든 자매 */
-  background-color: aqua;
+  background-color: palevioletred;
 }
 body > ul > ul:nth-child(4) > li:nth-child(4) {
   /*li:unt-child는 붙여써야 한다*/
@@ -60,5 +60,5 @@ body > ul > ul:nth-child(4) {
 [type="password"] {
   /* 타입은 [ ] */
   /* HTML 태그 속성 = "값" */
-  background-color: chocolate;
+  background-color: plum;
 }
