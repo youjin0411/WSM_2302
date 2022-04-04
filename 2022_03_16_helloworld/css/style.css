@@ -13,6 +13,9 @@
 #tittle{
   font-size: 40px;
 }
+img{
+  border: thick dashed palevioletred;
+}
 body > ul > li {
   color: green;
 }
