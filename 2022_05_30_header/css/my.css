@@ -11,7 +11,7 @@
 }
 nav.nav-list li:nth-child(1){
     flex-grow: 4;
-    flex-basis: 10cm;
+    flex-basis: 4cm;
 }
 nav.nav-list li:nth-child(2){ 
     flex-grow: 1;
