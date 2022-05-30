@@ -1,0 +1,24 @@
+.nav-list{
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.nav-list li{
+    flex-basis: 200px;  /*ㅕ 기본 크기 설정  */
+    flex-shrink: 0; /* 줄이기 가능 기본값 : 1 */
+    flex-grow: 0;  /* 늘이기 가능 기본값 : 0 */
+    flex: 1 10 200px; /*flew-grow flex-shrink flex-basis */
+    /* border : 픽셀 solid 색깔 */
+}
+nav.nav-list li:nth-child(1){
+    flex-grow: 4;
+    flex-basis: 10cm;
+}
+nav.nav-list li:nth-child(2){ 
+    flex-grow: 1;
+}
+nav.nav-list li:nth-child(3){ 
+    flex-grow: 1;
+}
+nav.nav-list li:nth-child(4){
+    flex-grow: 1;
+}
