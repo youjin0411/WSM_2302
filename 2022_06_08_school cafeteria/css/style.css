@@ -93,8 +93,16 @@ nav {
     align-items: center; /* nav글자 중앙정렬 */
 }
 
-nav i {
+nav a {
     color: #fff;
+}
+.nav-toggle {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.nav-toggle i{
+    color:#fff;
 }
 
 .nav-list {
