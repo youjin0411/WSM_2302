@@ -6,7 +6,7 @@
     /* color */
     --first-color: hsl(160, 100%, 25%);
     --first-color-bright: hsl(160, 100%, 40%);
-    --secont-color: hsl(339,77%,59%);
+    --second-color: hsl(339,77%,59%);
     --third-color: hsl(42,87%,52%);
     --title-color: hsl(160,0%,0%);
     --text-color: hsl(160,0%,47%);
@@ -94,7 +94,19 @@ nav {
 }
 
 nav i {
+    font-size: 1.25rem; /* 밥 아이콘 크게 하기 : 아이콘 1.25배 */
+}
+
+nav a {
     color: #fff;
+}
+.nav-toggle {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.nav-toggle i{
+    color:#fff;
 }
 
 .nav-list {
@@ -104,9 +116,41 @@ nav i {
 }
 
 .nav-link {
+    display: block; /* a 태그가 한 줄 전체를 차지해서 링크가 동작하도록... */
+}
+
+.nav-link {
     color: #fff;
 }
 /* breakpoint */
 /* 2K & 4K */
 
 /* mobile  */
+@media screen and (max-width: 600px){
+    /* 햄버거 메뉴 보이게 하기 */
+    .nav-toggle {
+        display: block; /*nav-toggle 즉, 밥 아이콘 제일 앞으로 */
+        position: absolute; /*nav-logo 가운데 정렬 */
+        cursor: pointer; /* 마우스 포인터: 손 => 토글에 가져 가면 마우스 커서 생성*/ 
+    }
+    .nav-logo {
+        /*밥 아이콘을 중앙 정렬 시켜서 아래에 있는 메뉴토글 버튼 보이게*/
+        margin: 0 auto; /*가운데 정렬*/
+    }
+    /* nav의 글자 햄버거 메뉴 안으로 수직으로 flex 방향 바꾸기 */
+    .nav-list {
+        flex-direction: column; /*수직*/
+        position: absolute; /* 원래 있던 자리의 (0,0)위치 */
+        left: 0; /* 왼쪽 정렬 */
+        right: 0; /* 넓이를 100%로 채움 */
+        top: 44px; /* nav높이 -> top높이 부분을 nav아래로 맞춘다. */
+        /* width: 100%; 넓이를 100%로 채우기 */
+        background-color: #2f2f2f;
+    }
+    .nav-item{
+        /* nav 메뉴 글자 사이의 위아래 여백 주기*/
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #fff;
+        text-align: center; /* 글자 가운데 정렬 */
+    }
+}
