@@ -61,6 +61,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--title-color);
 }
 
 img {
@@ -75,10 +76,35 @@ img {
 
 
 /* nav */
-.conatiner {
+.container {
     margin-left: 1rem;
     margin-right: 1rem;
-    
+}
+
+header{
+    background-color: var(--first-color);
+}
+
+nav {
+    height: 44px; /* nav글자 높이 */
+    /* 수평배열 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* nav글자 중앙정렬 */
+}
+
+nav i {
+    color: #fff;
+}
+
+.nav-list {
+    /* 수평배열 */
+    display: flex;
+    column-gap: 0.75rem; /* 12px = nav글자사이의 거리 */
+}
+
+.nav-link {
+    color: #fff;
 }
 /* breakpoint */
 /* 2K & 4K */
