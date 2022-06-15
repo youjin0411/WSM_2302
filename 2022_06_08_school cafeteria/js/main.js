@@ -1,10 +1,10 @@
 // show/hide menu: toggle(on/off반복) menu
-function toggleMenu(toggleId, navListId){
+const toggleMenu = function(toggleId, navListId){
     //html -> js 가져옴
     const toggle = document.getElementById(toggleId); 
     const navList = document.getElementById(navListId); 
     
-    function clickHandler() {
+    const clickHandler = function() {
         // show/hide menu : .show-menu
         navList.classList.toggle('show-menu')
     }
