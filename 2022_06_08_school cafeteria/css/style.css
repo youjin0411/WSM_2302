@@ -125,6 +125,10 @@ nav a {
 }
 
 /* HOME */
+h3 {
+    font-size: var(--h3-font-size);
+}
+
 main {
     display: flex; /*수평정렬*/
     justify-content: center;
@@ -143,6 +147,15 @@ main {
     flex: 1 0 240px; /*기본 240px이고 커지면 확장하자*/
     max-width: 300px; /* 너무 넓지 않게 max 정하자  */
 }
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card-time {
+    color: var(--third-color);
+}
+
 .card-image {
     height: 0;
     padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
